@@ -231,3 +231,22 @@ input {
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
+@media screen and (max-width: 376px) {
+  body{
+  padding: 10px;
+  padding-right: 10px;
+  width: 90%;
+   }
+
+ }
+
+ @media screen and (max-width: 320px) {
+.container{
+  width: 90%;
+}
+.delete-btn{
+  transform: translate(1073%, -50%);
+}
+
+ }
