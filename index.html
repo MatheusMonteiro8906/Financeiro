@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Controle de despesas</title>
-  </head>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" type="image/x-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="images/android-chrome-192x192.png">
+    </head>
   <body>
 
     <div class="popup-wrapper">
@@ -51,8 +54,8 @@
           <label for="amount">Valor <br />
             <small>(positivo - receitas, negativo - despesas)</small>
           </label>
-          <input type="number" id="amount" placeholder="Valor da transação"  onKeyPress="if(this.value.length==6) return false;"/>
-        </div>
+          <input type="number" id="amount" placeholder="Valor da transação" step="0.01" onKeyPress="if(this.value.length==6) return false;"/>
+        </div> 
 
         <button class="btn">Adicionar</button>
       </form>
